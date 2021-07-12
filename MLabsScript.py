@@ -6,7 +6,9 @@ import os
 
 
 #Prints the count of all images.
-parent_dir = '/Users/Vicente/PycharmProjects/Wireshark/pcaps'
+#parent_dir = '/Users/Vicente/PycharmProjects/Wireshark/pcaps'
+parent_dir = '/Users/Vicente/Downloads/2021/06/04'
+
 count = 0
 for subdir, dirs, files in os.walk(parent_dir):
     for file in files:
@@ -17,8 +19,6 @@ for subdir, dirs, files in os.walk(parent_dir):
 
 listOfFiles = []
 listOfTxtFiles=[]
-
-parent_dir = '/Users/Vicente/PycharmProjects/Wireshark/pcaps'
 for subdir, dirs, files in os.walk(parent_dir):
     for file in files:
         fi = str.lower(file)
